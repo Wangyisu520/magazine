@@ -1,0 +1,10 @@
+<view class='container'>
+  <article class="article"
+    wx:for="{{articleList}}"
+    wx:key= "{{index}}"
+    article-detail="{{item}}"
+  ></article>
+  <loading class="loading" hidden="{{!loading}}" />
+  <text wx:if='{{noMoreData}}' class='no-more'>没有更多了</text>
+</view>
+
